@@ -10,6 +10,15 @@ class ChoresController < ApplicationController
         render json :chore
     end
 
+    def create
+        chore = Chore.new(chore_params)
+        if chore.save 
+            render json :chore 
+        else 
+            render json: {errors: chore.errors.full_messages}
+        end 
+    end
+
     private
 
     def chore_params
