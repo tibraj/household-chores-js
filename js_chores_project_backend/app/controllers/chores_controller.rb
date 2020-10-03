@@ -5,4 +5,9 @@ class ChoresController < ApplicationController
         render json: chores
     end
 
+    def show 
+        chore = Chore.find(params[:id])
+        render json :chore
+    end
+
 end
