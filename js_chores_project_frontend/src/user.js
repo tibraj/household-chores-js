@@ -6,6 +6,8 @@ class User {
     }
 }
 
+document.getElementById("new-user").addEventListener("submit", createUser);
+
 function createUser(e) {
     e.preventDefault;
     const user = {
