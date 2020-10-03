@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+user_a = User.create(name: 'Taulant')
+
+chore_a = Chore.create(task: 'Rake the Leaves', duration: 20, user_id: 1)

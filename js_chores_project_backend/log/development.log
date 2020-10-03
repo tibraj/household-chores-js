@@ -27,3 +27,299 @@ FOREIGN KEY ("user_id")
   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Taulant"], ["created_at", "2020-10-03 18:46:55.135828"], ["updated_at", "2020-10-03 18:46:55.135828"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mChore Create (0.3ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Rake the Leaves"], ["duration", 20], ["user_id", 1], ["created_at", "2020-10-03 18:46:55.160438"], ["updated_at", "2020-10-03 18:46:55.160438"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2020-10-03 14:47:08 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/taulantibraj/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/taulantibraj/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.4ms | Allocations: 480)
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 2630)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-10-03 14:47:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-10-03 14:47:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.86ms)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 1.2ms | Allocations: 20266)
+
+
+Started GET "/chores" for ::1 at 2020-10-03 14:47:25 -0400
+Processing by ChoresController#index as HTML
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.72ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 2746)
+
+
+Started GET "/users" for ::1 at 2020-10-03 16:01:55 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.75ms)
+Completed 200 OK in 35ms (Views: 28.5ms | ActiveRecord: 1.4ms | Allocations: 16602)
+
+
+Started POST "/users" for ::1 at 2020-10-03 16:10:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Chris", "user"=>{"name"=>"Chris"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chris"], ["created_at", "2020-10-03 20:10:49.631861"], ["updated_at", "2020-10-03 20:10:49.631861"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.2ms | Allocations: 39101)
+
+
+  
+NoMethodError (undefined method `json' for #<UsersController:0x00007f9d3942d7d0>
+Did you mean?  JSON):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2020-10-03 16:10:59 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Chris", "user"=>{"name"=>"Chris"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chris"], ["created_at", "2020-10-03 20:10:59.829391"], ["updated_at", "2020-10-03 20:10:59.829391"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 1.4ms | Allocations: 38814)
+
+
+  
+NoMethodError (undefined method `json' for #<UsersController:0x00007f9d3939c028>
+Did you mean?  JSON):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2020-10-03 16:11:28 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.3ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.26ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.8ms | Allocations: 5405)
+
+
+Started POST "/users" for ::1 at 2020-10-03 16:19:03 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Tom", "user"=>{"name"=>"Tom"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tom"], ["created_at", "2020-10-03 20:19:03.946043"], ["updated_at", "2020-10-03 20:19:03.946043"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 1.5ms | Allocations: 38797)
+
+
+  
+NoMethodError (undefined method `json' for #<UsersController:0x00007f9d397c5690>
+Did you mean?  JSON):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2020-10-03 16:19:08 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.14ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.9ms | Allocations: 6852)
+
+
+Started POST "/users" for ::1 at 2020-10-03 16:20:41 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Caroline", "user"=>{"name"=>"Caroline"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Caroline"], ["created_at", "2020-10-03 20:20:41.226685"], ["updated_at", "2020-10-03 20:20:41.226685"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 1.7ms | Allocations: 38797)
+
+
+  
+NoMethodError (undefined method `json' for #<UsersController:0x00007f9d353971f8>
+Did you mean?  JSON):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2020-10-03 16:27:10 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Victoria", "user"=>{"name"=>"Victoria"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Victoria"], ["created_at", "2020-10-03 20:27:10.136740"], ["updated_at", "2020-10-03 20:27:10.136740"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 1.3ms | Allocations: 38797)
+
+
+  
+NoMethodError (undefined method `json' for #<UsersController:0x00007f9d38dcf708>
+Did you mean?  JSON):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2020-10-03 16:28:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.92ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.9ms | Allocations: 9684)
+
+
+Started POST "/users" for ::1 at 2020-10-03 16:29:10 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Olivia", "user"=>{"name"=>"Olivia"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Olivia"], ["created_at", "2020-10-03 20:29:10.709273"], ["updated_at", "2020-10-03 20:29:10.709273"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 1.6ms | Allocations: 38797)
+
+
+  
+NoMethodError (undefined method `json' for #<UsersController:0x00007f9d35244558>
+Did you mean?  JSON):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2020-10-03 16:29:14 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.93ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.8ms | Allocations: 11077)
+
+
+Started POST "/users" for ::1 at 2020-10-03 16:29:52 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jared", "user"=>{"name"=>"Jared"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jared"], ["created_at", "2020-10-03 20:29:52.406815"], ["updated_at", "2020-10-03 20:29:52.406815"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.3ms | Allocations: 38797)
+
+
+  
+NoMethodError (undefined method `json' for #<UsersController:0x00007f9d35302be8>
+Did you mean?  JSON):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2020-10-03 16:29:56 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.35ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 1.0ms | Allocations: 12503)
+
+
