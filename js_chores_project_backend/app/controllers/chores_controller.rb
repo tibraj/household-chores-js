@@ -7,13 +7,13 @@ class ChoresController < ApplicationController
 
     def show 
         chore = Chore.find(params[:id])
-        render json :chore
+        render json: chore
     end
 
     def create
         chore = Chore.new(chore_params)
         if chore.save 
-            render json :chore 
+            render json: chore 
         else 
             render json: {errors: chore.errors.full_messages}
         end 
