@@ -10,4 +10,10 @@ class ChoresController < ApplicationController
         render json :chore
     end
 
+    private
+
+    def chore_params
+        params.require(:chore).permit(:task, :duration, :user_id)
+    end
+
 end
