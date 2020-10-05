@@ -26,5 +26,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log('success');
 })
 
+document.getElementById('new-chore-form').addEventListener("submit", createChore);
+
+
+
 
 
