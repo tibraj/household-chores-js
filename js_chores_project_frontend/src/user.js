@@ -9,7 +9,7 @@ class User {
         this.chores = user.chores;
     }
 
-    static createUser(user) {
+    static userForm(user) {
         document.getElementById("new-user").addEventListener("submit", function(e) {
             e.preventDefault();
             const userName = {
@@ -26,9 +26,18 @@ class User {
             .then(resp => resp.json())
             .then(json => {
                 const newUser = new User(json);
-                console.log(newUser)
+                newUser.userHeader();
             })
         })
-    } 
+    }
+
+    userHeader() {
+        let container = document.getElementById('container');
+        container.innerHTML = '';
+        let userHeading = document.getElementById('user-header');
+        userHeading.innerHTML = `<h1>${this.name}'s Chores:</h1>`
+    }
 }
+
+
 
