@@ -28,4 +28,8 @@ function createUser(event) {
         })
 }
 
+function hideUserForm() {
+    document.getElementById('new-user-form').style.display="none";
+}
+
 
