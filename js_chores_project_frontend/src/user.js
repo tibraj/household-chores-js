@@ -6,7 +6,7 @@ class User {
     }
 }
 
-
+document.getElementById('new-user-form').addEventListener("submit", createUser);
 
 
 
