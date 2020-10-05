@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log('Success');
 })
 
+document.getElementById('new-user-form').addEventListener("submit", createUser);
+
+
+
 
 
 
