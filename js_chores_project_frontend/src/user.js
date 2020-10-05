@@ -26,11 +26,8 @@ function createUser(event) {
             const newUser = new User(json);
             console.log(newUser);
         })
-        hideUserForm();
+        document.getElementById('new-user-form').innerHTML='';
 }
 
-function hideUserForm() {
-    document.getElementById('new-user-form').style.display="none";
-}
 
 
