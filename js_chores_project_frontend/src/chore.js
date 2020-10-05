@@ -20,5 +20,11 @@ class Chore {
     }
 }
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    // event.preventDefault()
+    Chore.newChoreForm();
+    console.log('success');
+})
+
 
 
