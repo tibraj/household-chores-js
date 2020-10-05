@@ -19,11 +19,17 @@ class User {
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
+    // event.preventDefault()
     User.userForm();
-    console.log('Success');
+    
 })
 
 document.getElementById('new-user-form').addEventListener("submit", createUser);
+
+function createUser(event) {
+    event.preventDefault()
+    console.log('test');
+}
 
 
 
