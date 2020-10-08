@@ -24,7 +24,7 @@ class Chore {
 
 document.getElementById('new-chore-form').addEventListener("submit", createChore);
 
-// function createChore(event) {
+function createChore(event) {
 //     event.preventDefault();
 //     const chore = {
 //         task: document.getElementById('task').value,
@@ -43,7 +43,7 @@ document.getElementById('new-chore-form').addEventListener("submit", createChore
 //             const newChore = new Chore(json);
 //             console.log(newChore);
 //         })
-// }
+}
 
 
 
