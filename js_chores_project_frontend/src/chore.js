@@ -26,6 +26,8 @@ document.getElementById('new-chore-form').addEventListener("submit", createChore
 
 function createChore(event) {
     event.preventDefault();
+    let choreContainer = document.getElementById('chore-container');
+    let userId = choreContainer.getAttribute('user-id');
 //     const chore = {
 //         task: document.getElementById('task').value,
 //         duration: document.getElementById('duration').value
