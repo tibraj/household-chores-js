@@ -33,19 +33,19 @@ function createChore(event) {
         duration: document.getElementById('duration').value,
         user_id = userId
     }
-//     fetch("http://localhost:3000/chores", {
-//         method: 'POST',
-//         body: JSON.stringify(chore),
-//         headers: { 
-//             'Content-Type': 'application/json',
-//             'Accept': 'application/json'
-//         }
-//     })
-//         .then(response => response.json())
-//         .then(json => {
-//             const newChore = new Chore(json);
-//             console.log(newChore);
-//         })
+    fetch("http://localhost:3000/chores", {
+        method: 'POST',
+        body: JSON.stringify(chore),
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+    })
+        .then(response => response.json())
+        .then(json => {
+            const newChore = new Chore(json);
+            console.log(newChore);
+        })
 }
 
 
