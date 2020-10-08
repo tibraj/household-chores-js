@@ -53,7 +53,6 @@ function clearUserForm() {
 
 function userHeader(name) {
     let userContainer = document.getElementById('user-container');
-    // userContainer.setAttribute('user-id', `${newUser.id}`);
     userContainer.innerHTML= `<h1>${name}'s Chores:</h1>`;
 }
 
