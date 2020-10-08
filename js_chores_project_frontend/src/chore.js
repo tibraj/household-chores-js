@@ -28,10 +28,11 @@ function createChore(event) {
     event.preventDefault();
     let choreContainer = document.getElementById('chore-container');
     let userId = choreContainer.getAttribute('user-id');
-//     const chore = {
-//         task: document.getElementById('task').value,
-//         duration: document.getElementById('duration').value
-//     }
+    const chore = {
+        task: document.getElementById('task').value,
+        duration: document.getElementById('duration').value,
+        user_id = userId
+    }
 //     fetch("http://localhost:3000/chores", {
 //         method: 'POST',
 //         body: JSON.stringify(chore),
