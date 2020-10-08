@@ -42,7 +42,8 @@ function createUser(event) {
             console.log(newUser);
             Chore.newChoreForm();
             clearUserForm();
-            userHeader(`${newUser.name}`)
+            userHeader(`${newUser.name}`);
+            document.getElementById('chore-container').setAttribute("user-id", `${newUser.id}`)
         })
 }
 
