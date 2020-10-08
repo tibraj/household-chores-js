@@ -25,7 +25,7 @@ class Chore {
 document.getElementById('new-chore-form').addEventListener("submit", createChore);
 
 function createChore(event) {
-//     event.preventDefault();
+    event.preventDefault();
 //     const chore = {
 //         task: document.getElementById('task').value,
 //         duration: document.getElementById('duration').value
