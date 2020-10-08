@@ -42,15 +42,19 @@ function createUser(event) {
             console.log(newUser);
             Chore.newChoreForm();
             clearUserForm();
-            // let userContainer = document.getElementsByClassName('user-container');
-            // userContainer.setAttribute('user-id', `${newUser.id}`);
-            // userContainer.innerHTML= `<h1>${newUser.name}'s Chores:</h1>`;
+            userHeader(`${newUser.name}`)
         })
 }
 
 function clearUserForm() {
     const userForm = document.getElementById('new-user-form');
     userForm.innerHTML = ''
+}
+
+function userHeader(name) {
+    let userContainer = document.getElementById('user-container');
+    // userContainer.setAttribute('user-id', `${newUser.id}`);
+    userContainer.innerHTML= `<h1>${name}'s Chores:</h1>`;
 }
 
     
