@@ -48,6 +48,12 @@ function createChore(event) {
         })
 }
 
+function printChores() {
+    
+}
+
+
+
 
 
 
