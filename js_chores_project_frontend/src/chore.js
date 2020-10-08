@@ -31,7 +31,7 @@ function createChore(event) {
     const chore = {
         task: document.getElementById('task').value,
         duration: document.getElementById('duration').value,
-        user_id = userId
+        user_id: userId
     }
     fetch("http://localhost:3000/chores", {
         method: 'POST',
