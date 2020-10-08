@@ -4,14 +4,29 @@ class User {
         this.name = user.name;
         this.chores = user.chores;
     }
+
+    static newUserForm() {
+        let newUserForm = document.getElementById('new-user-form');
+        newUserForm.innerHTML += `
+            <form>
+                <label>Enter Name:</label>
+                <input type="text" id="name" placeholder="Please Enter Your Name">
+                <input type="submit">
+            </form>
+        `   
+    }
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    User.newUserForm();
+ })
 
 document.getElementById('new-user-form').addEventListener("submit", createUser);
 
 function createUser(event) {
     event.preventDefault();
     const user = {
-        name: document.getElementById('name').value
+        name: document.getElementById("name").value
     }
     fetch("http://localhost:3000/users", {
         method: 'POST',
@@ -25,9 +40,22 @@ function createUser(event) {
         .then(json => {
             const newUser = new User(json);
             console.log(newUser);
+            Chore.newChoreForm();
+            clearUserForm();
+            // let userContainer = document.getElementsByClassName('user-container');
+            // userContainer.setAttribute('user-id', `${newUser.id}`);
+            // userContainer.innerHTML= `<h1>${newUser.name}'s Chores:</h1>`;
         })
-        document.getElementById('new-user-form').innerHTML='';
 }
+
+function clearUserForm() {
+    const userForm = document.getElementById('new-user-form');
+    userForm.innerHTML = ''
+}
+
+    
+
+
 
 
 
