@@ -69,6 +69,9 @@ function clearChoresList () {
     document.getElementById('chore-container').innerHTML = ''
 }
 
+function deleteChore() {
+    
+}
 
 
 
