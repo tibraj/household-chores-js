@@ -58,7 +58,7 @@ function printChores(idUser) {
             if(chore.user.id == `${idUser}`) {
                 document.getElementById('chore-container').innerHTML += `
                 <p class="chore" chore-id=${chore.id}>Task: ${chore.task} || Duration: ${chore.duration}</p>
-                
+                <button type="button" id=${chore.id}>Delete Chore</button>
                 `
             }
         }) 
