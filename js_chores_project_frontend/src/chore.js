@@ -45,11 +45,24 @@ function createChore(event) {
         .then(json => {
             const newChore = new Chore(json);
             console.log(newChore);
+            document.getElementById('chore-container').innerHTML = ''
+            printChores(`${chore.user_id}`)
         })
 }
 
-function printChores() {
-    
+function printChores(idUser) {
+    fetch("http://localhost:3000/chores")
+    .then(response => response.json())
+    .then(chores => {
+        chores.forEach(function(chore) {
+            if(chore.user.id == `${idUser}`) {
+                document.getElementById('chore-container').innerHTML += `
+                <p>Task: ${chore.task}</p>
+                <p>Duration: ${chore.duration}</p>
+                `
+            }
+        }) 
+    })
 }
 
 
