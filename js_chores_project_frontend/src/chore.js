@@ -57,8 +57,8 @@ function printChores(idUser) {
         chores.forEach(function(chore) {
             if(chore.user.id == `${idUser}`) {
                 document.getElementById('chore-container').innerHTML += `
-                <p>Task: ${chore.task}</p>
-                <p>Duration: ${chore.duration}</p>
+                <p class="chore" chore-id=${chore.id}>Task: ${chore.task} || Duration: ${chore.duration}</p>
+                
                 `
             }
         }) 
@@ -70,7 +70,7 @@ function clearChoresList () {
 }
 
 function deleteChore() {
-    
+
 }
 
 
