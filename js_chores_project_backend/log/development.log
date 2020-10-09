@@ -3788,3 +3788,1647 @@ Processing by UsersController#create as JSON
 Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 1.2ms | Allocations: 3752)
 
 
+Started GET "/users" for ::1 at 2020-10-08 11:22:08 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 11]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 12]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 13]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 14]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 15]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 17]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 18]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 19]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 20]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 21]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 22]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 23]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 24]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 25]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 26]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 27]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 28]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 29]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 30]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 31]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 32]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 33]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 34]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 35]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 36]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 37]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 38]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 39]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 40]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 41]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 42]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 43]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 44]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 45]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 46]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 47]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (79.5ms)
+Completed 200 OK in 113ms (Views: 100.9ms | ActiveRecord: 5.3ms | Allocations: 82167)
+
+
+Started POST "/users" for ::1 at 2020-10-08 11:22:21 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Geinoh", "user"=>{"name"=>"Geinoh"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Geinoh"], ["created_at", "2020-10-08 15:22:21.039511"], ["updated_at", "2020-10-08 15:22:21.039511"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 48]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.31ms)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 1.8ms | Allocations: 4043)
+
+
+Started POST "/users" for ::1 at 2020-10-08 11:23:38 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Steve", "user"=>{"name"=>"Steve"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Steve"], ["created_at", "2020-10-08 15:23:38.581638"], ["updated_at", "2020-10-08 15:23:38.581638"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 49]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.6ms)
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 2.3ms | Allocations: 3773)
+
+
+Started POST "/users" for ::1 at 2020-10-08 11:25:58 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Angela", "user"=>{"name"=>"Angela"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Angela"], ["created_at", "2020-10-08 15:25:58.828210"], ["updated_at", "2020-10-08 15:25:58.828210"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 50]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.28ms)
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 1.0ms | Allocations: 3773)
+
+
+Started POST "/users" for ::1 at 2020-10-08 12:20:49 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Brian", "user"=>{"name"=>"Brian"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Brian"], ["created_at", "2020-10-08 16:20:49.672826"], ["updated_at", "2020-10-08 16:20:49.672826"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 51]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.56ms)
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 1.2ms | Allocations: 3773)
+
+
+Started POST "/users" for ::1 at 2020-10-08 12:40:52 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Ezekiel", "user"=>{"name"=>"Ezekiel"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ezekiel"], ["created_at", "2020-10-08 16:40:52.221084"], ["updated_at", "2020-10-08 16:40:52.221084"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 52]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.57ms)
+Completed 200 OK in 17ms (Views: 1.8ms | ActiveRecord: 2.3ms | Allocations: 3774)
+
+
+Started POST "/users" for ::1 at 2020-10-08 12:43:31 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Morpheus", "user"=>{"name"=>"Morpheus"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Morpheus"], ["created_at", "2020-10-08 16:43:31.146444"], ["updated_at", "2020-10-08 16:43:31.146444"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 53]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.68ms)
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 1.2ms | Allocations: 3773)
+
+
+Started POST "/users" for ::1 at 2020-10-08 12:44:35 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Neo", "user"=>{"name"=>"Neo"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Neo"], ["created_at", "2020-10-08 16:44:35.128101"], ["updated_at", "2020-10-08 16:44:35.128101"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 54]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.38ms)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 1.3ms | Allocations: 3752)
+
+
+Started POST "/chores" for ::1 at 2020-10-08 12:44:50 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Mow the Lawn", "duration"=>"20", "user_id"=>"54", "chore"=>{"task"=>"Mow the Lawn", "duration"=>"20", "user_id"=>"54"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.3ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Mow the Lawn"], ["duration", 20], ["user_id", 54], ["created_at", "2020-10-08 16:44:50.861098"], ["updated_at", "2020-10-08 16:44:50.861098"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 1.6ms | Allocations: 4222)
+
+
+Started GET "/users" for ::1 at 2020-10-08 12:45:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 11]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 12]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 13]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 14]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 15]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 17]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 18]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 19]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 20]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 21]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 22]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 23]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 24]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 25]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 26]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 27]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 28]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 29]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 30]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 31]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 32]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 33]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 34]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 35]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 36]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 37]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 38]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 39]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 40]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 41]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 42]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 43]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 44]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 45]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 46]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 47]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 48]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 49]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 50]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 51]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 52]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 53]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 54]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (69.07ms)
+Completed 200 OK in 72ms (Views: 67.3ms | ActiveRecord: 4.3ms | Allocations: 78265)
+
+
+Started GET "/" for ::1 at 2020-10-08 12:45:23 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/taulantibraj/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/taulantibraj/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.3ms | Allocations: 315)
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 1589)
+
+
+Started GET "/chores" for ::1 at 2020-10-08 12:45:27 -0400
+Processing by ChoresController#index as HTML
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.32ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.5ms | Allocations: 3906)
+
+
+Started POST "/chores" for ::1 at 2020-10-08 12:47:03 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Clear the gutters", "duration"=>"60", "user_id"=>"54", "chore"=>{"task"=>"Clear the gutters", "duration"=>"60", "user_id"=>"54"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.3ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Clear the gutters"], ["duration", 60], ["user_id", 54], ["created_at", "2020-10-08 16:47:03.891753"], ["updated_at", "2020-10-08 16:47:03.891753"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 3853)
+
+
+Started GET "/chores" for ::1 at 2020-10-08 12:47:12 -0400
+Processing by ChoresController#index as HTML
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.77ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.5ms | Allocations: 5305)
+
+
+Started GET "/users" for ::1 at 2020-10-08 12:47:17 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 11]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 12]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 13]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 14]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 15]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 17]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 18]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 19]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 20]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 21]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 22]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 23]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 24]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 25]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 26]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 27]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 28]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 29]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 30]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 31]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 32]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 33]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 34]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 35]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 36]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 37]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 38]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 39]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 40]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 41]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 42]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.0ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 43]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 44]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 45]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 46]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 47]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 48]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 49]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 50]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 51]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 52]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 53]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 54]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (70.41ms)
+Completed 200 OK in 73ms (Views: 69.2ms | ActiveRecord: 4.1ms | Allocations: 78396)
+
+
+Started POST "/chores" for ::1 at 2020-10-08 12:48:03 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Make the bed", "duration"=>"5", "user_id"=>"54", "chore"=>{"task"=>"Make the bed", "duration"=>"5", "user_id"=>"54"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Make the bed"], ["duration", 5], ["user_id", 54], ["created_at", "2020-10-08 16:48:03.545259"], ["updated_at", "2020-10-08 16:48:03.545259"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 3853)
+
+
+Started POST "/users" for ::1 at 2020-10-08 14:16:35 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Joanna", "user"=>{"name"=>"Joanna"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Joanna"], ["created_at", "2020-10-08 18:16:35.305962"], ["updated_at", "2020-10-08 18:16:35.305962"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 55]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.44ms)
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 1.2ms | Allocations: 3771)
+
+
+Started POST "/chores" for ::1 at 2020-10-08 14:16:49 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Clean the living room", "duration"=>"40", "user_id"=>"55", "chore"=>{"task"=>"Clean the living room", "duration"=>"40", "user_id"=>"55"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.3ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Clean the living room"], ["duration", 40], ["user_id", 55], ["created_at", "2020-10-08 18:16:49.163096"], ["updated_at", "2020-10-08 18:16:49.163096"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 1.2ms | Allocations: 3866)
+
+
+Started GET "/chores" for ::1 at 2020-10-08 14:16:49 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.17ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.5ms | Allocations: 8212)
+
+
+Started POST "/chores" for ::1 at 2020-10-08 14:18:15 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Clean the living room", "duration"=>"40", "user_id"=>"55", "chore"=>{"task"=>"Clean the living room", "duration"=>"40", "user_id"=>"55"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.3ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Clean the living room"], ["duration", 40], ["user_id", 55], ["created_at", "2020-10-08 18:18:15.006364"], ["updated_at", "2020-10-08 18:18:15.006364"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.3ms | Allocations: 3853)
+
+
+Started GET "/chores" for ::1 at 2020-10-08 14:18:15 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.07ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.6ms | Allocations: 9607)
+
+
+Started GET "/chores" for ::1 at 2020-10-08 14:18:22 -0400
+Processing by ChoresController#index as HTML
+  [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.43ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.7ms | Allocations: 9609)
+
+
+Started POST "/users" for ::1 at 2020-10-09 12:12:37 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Mike", "user"=>{"name"=>"Mike"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Mike"], ["created_at", "2020-10-09 16:12:37.938021"], ["updated_at", "2020-10-09 16:12:37.938021"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 56]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (17.39ms)
+Completed 200 OK in 47ms (Views: 31.3ms | ActiveRecord: 3.5ms | Allocations: 12055)
+
+
+Started POST "/chores" for ::1 at 2020-10-09 12:13:16 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Vacuum the carpets", "duration"=>"20", "user_id"=>"56", "chore"=>{"task"=>"Vacuum the carpets", "duration"=>"20", "user_id"=>"56"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Vacuum the carpets"], ["duration", 20], ["user_id", 56], ["created_at", "2020-10-09 16:13:16.374815"], ["updated_at", "2020-10-09 16:13:16.374815"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 18ms (Views: 2.7ms | ActiveRecord: 1.8ms | Allocations: 8645)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 12:13:16 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.51ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.7ms | Allocations: 11108)
+
+
+Started GET "/" for ::1 at 2020-10-09 12:13:30 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/taulantibraj/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/taulantibraj/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.9ms | Allocations: 315)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 1590)
+
+
+Started GET "/users" for ::1 at 2020-10-09 12:13:34 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.3ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 11]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 12]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 13]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 14]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 15]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 17]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 18]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 19]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 20]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 21]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 22]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 23]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 24]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 25]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 26]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 27]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 28]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 29]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 30]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 31]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 32]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 33]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 34]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 35]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 36]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 37]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 38]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 39]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 40]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 41]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 42]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 43]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 44]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 45]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 46]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 47]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 48]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 49]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 50]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 51]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 52]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 53]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 54]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 55]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 56]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (78.59ms)
+Completed 200 OK in 85ms (Views: 80.2ms | ActiveRecord: 4.3ms | Allocations: 81969)
+
+
+Started GET "/" for ::1 at 2020-10-09 12:13:41 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/taulantibraj/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/taulantibraj/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.5ms | Allocations: 196)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 731)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 12:13:44 -0400
+Processing by ChoresController#index as HTML
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.42ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.9ms | Allocations: 11096)
+
+
+Started POST "/chores" for ::1 at 2020-10-09 12:14:30 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Wipe down the windows", "duration"=>"15", "user_id"=>"56", "chore"=>{"task"=>"Wipe down the windows", "duration"=>"15", "user_id"=>"56"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.6ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Wipe down the windows"], ["duration", 15], ["user_id", 56], ["created_at", "2020-10-09 16:14:30.733735"], ["updated_at", "2020-10-09 16:14:30.733735"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 2.0ms | Allocations: 3874)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 12:14:30 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.67ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.7ms | Allocations: 12493)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 12:17:00 -0400
+Processing by ChoresController#index as HTML
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.63ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.9ms | Allocations: 12490)
+
+
+Started GET "/users" for ::1 at 2020-10-09 12:17:04 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 11]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 12]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 13]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 14]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 15]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 17]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 18]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 19]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 20]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 21]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 22]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 23]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 24]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 25]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 26]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 27]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 28]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 29]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 30]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 31]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 32]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 33]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 34]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 35]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 36]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 37]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 38]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 39]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 40]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 41]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 42]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 43]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 44]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 45]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 46]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 47]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 48]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 49]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 50]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 51]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 52]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 53]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 54]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 55]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 56]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (69.58ms)
+Completed 200 OK in 73ms (Views: 68.6ms | ActiveRecord: 4.3ms | Allocations: 81975)
+
+
+Started POST "/users" for ::1 at 2020-10-09 12:35:31 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Musafa", "user"=>{"name"=>"Musafa"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Musafa"], ["created_at", "2020-10-09 16:35:31.800876"], ["updated_at", "2020-10-09 16:35:31.800876"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.3ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 57]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.42ms)
+Completed 200 OK in 9ms (Views: 2.7ms | ActiveRecord: 2.4ms | Allocations: 3782)
+
+
+Started POST "/chores" for ::1 at 2020-10-09 12:35:39 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Rake the Leaves", "duration"=>"45", "user_id"=>"57", "chore"=>{"task"=>"Rake the Leaves", "duration"=>"45", "user_id"=>"57"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Rake the Leaves"], ["duration", 45], ["user_id", 57], ["created_at", "2020-10-09 16:35:39.972997"], ["updated_at", "2020-10-09 16:35:39.972997"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.51ms)
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.5ms | Allocations: 3866)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 12:35:39 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.6ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 1.0ms | Allocations: 13980)
+
+
+Started POST "/chores" for ::1 at 2020-10-09 12:35:58 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Take out the garbage", "duration"=>"10", "user_id"=>"57", "chore"=>{"task"=>"Take out the garbage", "duration"=>"10", "user_id"=>"57"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Take out the garbage"], ["duration", 10], ["user_id", 57], ["created_at", "2020-10-09 16:35:58.028305"], ["updated_at", "2020-10-09 16:35:58.028305"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 1.7ms | Allocations: 3856)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 12:35:58 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.39ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.9ms | Allocations: 15377)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 12:36:14 -0400
+Processing by ChoresController#index as HTML
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.16ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.9ms | Allocations: 15375)
+
+
+Started POST "/chores" for ::1 at 2020-10-09 12:36:53 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Wipe down the tables", "duration"=>"20", "user_id"=>"57", "chore"=>{"task"=>"Wipe down the tables", "duration"=>"20", "user_id"=>"57"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Wipe down the tables"], ["duration", 20], ["user_id", 57], ["created_at", "2020-10-09 16:36:53.437941"], ["updated_at", "2020-10-09 16:36:53.437941"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 1.8ms | Allocations: 3853)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 12:36:53 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.28ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.9ms | Allocations: 16792)
+
+
+Started POST "/users" for ::1 at 2020-10-09 12:46:21 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Test", "user"=>{"name"=>"Test"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Test"], ["created_at", "2020-10-09 16:46:21.916116"], ["updated_at", "2020-10-09 16:46:21.916116"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 58]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.67ms)
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 1.8ms | Allocations: 3773)
+
+
+Started POST "/chores" for ::1 at 2020-10-09 12:46:33 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Make breakfast", "duration"=>"15", "user_id"=>"58", "chore"=>{"task"=>"Make breakfast", "duration"=>"15", "user_id"=>"58"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Make breakfast"], ["duration", 15], ["user_id", 58], ["created_at", "2020-10-09 16:46:33.394871"], ["updated_at", "2020-10-09 16:46:33.394871"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.5ms | Allocations: 3866)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 12:46:33 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.96ms)
+Completed 200 OK in 27ms (Views: 17.9ms | ActiveRecord: 8.8ms | Allocations: 18283)
+
+
+Started POST "/chores" for ::1 at 2020-10-09 12:46:42 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Make lunch", "duration"=>"25", "user_id"=>"58", "chore"=>{"task"=>"Make lunch", "duration"=>"25", "user_id"=>"58"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Make lunch"], ["duration", 25], ["user_id", 58], ["created_at", "2020-10-09 16:46:42.416710"], ["updated_at", "2020-10-09 16:46:42.416710"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.53ms)
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 1.4ms | Allocations: 3853)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 12:46:42 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.81ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 1.0ms | Allocations: 19677)
+
+
+Started POST "/users" for ::1 at 2020-10-09 13:06:23 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Moses", "user"=>{"name"=>"Moses"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Moses"], ["created_at", "2020-10-09 17:06:23.719106"], ["updated_at", "2020-10-09 17:06:23.719106"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 59]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.05ms)
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 1.7ms | Allocations: 3771)
+
+
+Started POST "/chores" for ::1 at 2020-10-09 13:06:38 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Part the ocean", "duration"=>"60", "user_id"=>"59", "chore"=>{"task"=>"Part the ocean", "duration"=>"60", "user_id"=>"59"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Part the ocean"], ["duration", 60], ["user_id", 59], ["created_at", "2020-10-09 17:06:38.861687"], ["updated_at", "2020-10-09 17:06:38.861687"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.6ms | Allocations: 3866)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 13:06:38 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.56ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 1.1ms | Allocations: 21165)
+
+
+Started POST "/chores" for ::1 at 2020-10-09 13:06:49 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Lead the people", "duration"=>"240", "user_id"=>"59", "chore"=>{"task"=>"Lead the people", "duration"=>"240", "user_id"=>"59"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.5ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Lead the people"], ["duration", 240], ["user_id", 59], ["created_at", "2020-10-09 17:06:49.308346"], ["updated_at", "2020-10-09 17:06:49.308346"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 1.5ms | Allocations: 3853)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 13:06:49 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.36ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 1.2ms | Allocations: 22565)
+
+
+Started POST "/chores" for ::1 at 2020-10-09 13:07:04 -0400
+Processing by ChoresController#create as JSON
+  Parameters: {"task"=>"Hope for the best", "duration"=>"1000", "user_id"=>"59", "chore"=>{"task"=>"Hope for the best", "duration"=>"1000", "user_id"=>"59"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[36mChore Create (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("task", "duration", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["task", "Hope for the best"], ["duration", 1000], ["user_id", 59], ["created_at", "2020-10-09 17:07:04.495467"], ["updated_at", "2020-10-09 17:07:04.495467"]]
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chores_controller.rb:15:in `create'
+[active_model_serializers] Rendered ChoreSerializer with ActiveModelSerializers::Adapter::Attributes (0.58ms)
+Completed 200 OK in 7ms (Views: 1.1ms | ActiveRecord: 1.7ms | Allocations: 3853)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 13:07:04 -0400
+Processing by ChoresController#index as */*
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.63ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 1.0ms | Allocations: 23977)
+
+
+Started GET "/users" for ::1 at 2020-10-09 13:07:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 9]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 11]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 12]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 13]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 14]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 15]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 16]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 17]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 18]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 19]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 20]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 21]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 22]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 23]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 24]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 25]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 26]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 27]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 28]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 29]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 30]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 31]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 32]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 33]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 34]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 35]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 36]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 37]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 38]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 39]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 40]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 41]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 42]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 43]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 44]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 45]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 46]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 47]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 48]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 49]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 50]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 51]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 52]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 53]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 54]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 55]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 56]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 57]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 58]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."user_id" = ?[0m  [["user_id", 59]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (71.68ms)
+Completed 200 OK in 76ms (Views: 70.7ms | ActiveRecord: 4.8ms | Allocations: 87432)
+
+
+Started GET "/chores" for ::1 at 2020-10-09 13:07:23 -0400
+Processing by ChoresController#index as HTML
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chores_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.18ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 1.1ms | Allocations: 23975)
+
+

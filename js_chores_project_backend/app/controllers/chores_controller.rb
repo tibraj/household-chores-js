@@ -19,6 +19,12 @@ class ChoresController < ApplicationController
         end 
     end
 
+    def destroy
+        chore = Chore.find_by(id: params[:id])
+        chore.destroy 
+        render json: chore
+    end
+
     private
 
     def chore_params
