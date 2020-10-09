@@ -45,7 +45,7 @@ function createChore(event) {
         .then(json => {
             const newChore = new Chore(json);
             console.log(newChore);
-            document.getElementById('chore-container').innerHTML = ''
+            clearChoresList();
             printChores(`${chore.user_id}`)
         })
 }
@@ -63,6 +63,10 @@ function printChores(idUser) {
             }
         }) 
     })
+}
+
+function clearChoresList () {
+    document.getElementById('chore-container').innerHTML = ''
 }
 
 
