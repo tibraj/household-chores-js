@@ -10,11 +10,11 @@ class Chore {
           let newChoreForm = document.getElementById('new-chore-form');
           newChoreForm.innerHTML += `
               <form id='new-chore'>
-                  <label>Enter Task:</label>
-                  <input type="text" id="task" placeholder="Please Enter Task">
+                  <p><label>Enter Task:</label>
+                  <input type="text" id="task" placeholder="Please Enter Task"></p>
                   <label>Enter Chore Duration (in minutes):</label>
                   <input type="number" id="duration" placeholder="Enter a Number">
-                  <input type="submit">
+                  <p><input type="submit"></p>
               </form>
           `
       }
@@ -58,8 +58,8 @@ function printChores(idUser) {
             if(chore.user.id == `${idUser}`) {
                 document.getElementById('chore-container').innerHTML += `
                 <div class="container" data-chore-id="${chore.id}">
-                <p>Task: ${chore.task} || Duration: ${chore.duration}</p>
-                <button type="button" class="chore-button">Done</button>
+                <p>${chore.task}        ||          ${chore.duration} Minutes
+                <button type="button" class="chore-button">Done</button></p>
                 </div>
                 `
                 document.querySelectorAll('.chore-button').forEach(element => {
