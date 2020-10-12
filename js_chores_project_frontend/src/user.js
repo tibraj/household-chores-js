@@ -10,7 +10,7 @@ class User {
         newUserForm.innerHTML += `
             <form>
                 <label>Enter Name:</label>
-                <input type="text" id="name" placeholder="Please Enter Your Name">
+                <input type="text" id="name" placeholder="Enter Your Name">
                 <input type="submit">
             </form>
         `   
