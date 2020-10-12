@@ -72,6 +72,8 @@ function printChores(idUser) {
 
 function clearChoresList () {
     document.getElementById('chore-container').innerHTML = ''
+    document.getElementById('task').value='';
+    document.getElementById('duration').value='';
 }
 
 
