@@ -57,23 +57,35 @@ function printChores(idUser) {
         chores.forEach(function(chore) {
             if(chore.user.id == `${idUser}`) {
                 document.getElementById('chore-container').innerHTML += `
-                <p class="chore" chore-id=${chore.id}>Task: ${chore.task} || Duration: ${chore.duration}</p>
-                <button type="button" id=${chore.id}>Delete Chore</button>
+                <div class="container" data-chore-id="${chore.id}">
+                <p>Task: ${chore.task} || Duration: ${chore.duration}</p>
+                <button type="button" id="chore-button">Done</button>
+                </div>
                 `
+                document.getElementById('chore-button').addEventListener('click', deleteChore)
             }
         }) 
     })
 }
-
+{/* <div id="chore-${chore.id}" chore-id=${chore.id}></div> */}
 function clearChoresList () {
     document.getElementById('chore-container').innerHTML = ''
 }
 
+
+
 function deleteChore() {
-
+    let choreId = this.parentElement.getAttribute('data-chore-id')
+    console.log(choreId)
+    fetch(`http://localhost:3000/chores/${choreId}`, {
+        method: 'DELETE',
+    })
+    let deletedChore = document.querySelector(`.container[data-chore-id="${choreId}"]`);
+    deletedChore.remove();
+    // chore.style.setAttribute('text-decoration', 'line-through');
+    // console.log(document.querySelector(div#'chore-container' p#chore[chore-id=`${chore.id}`]));
+        // deletedChore.remove();
+    // })
 }
-
-
-
 
 
