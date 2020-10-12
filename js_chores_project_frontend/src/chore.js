@@ -59,15 +59,17 @@ function printChores(idUser) {
                 document.getElementById('chore-container').innerHTML += `
                 <div class="container" data-chore-id="${chore.id}">
                 <p>Task: ${chore.task} || Duration: ${chore.duration}</p>
-                <button type="button" id="chore-button">Done</button>
+                <button type="button" class="chore-button">Done</button>
                 </div>
                 `
-                document.getElementById('chore-button').addEventListener('click', deleteChore)
-            }
-        }) 
-    })
+                document.querySelectorAll('.chore-button').forEach(element => {
+                    element.addEventListener('click', deleteChore)
+            });
+        } 
+        })
+    })  
 }
-{/* <div id="chore-${chore.id}" chore-id=${chore.id}></div> */}
+
 function clearChoresList () {
     document.getElementById('chore-container').innerHTML = ''
 }
