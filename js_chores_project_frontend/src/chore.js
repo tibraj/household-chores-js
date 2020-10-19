@@ -58,8 +58,8 @@ function printChores(idUser) {
             if(chore.user.id == `${idUser}`) {
                 document.getElementById('chore-container').innerHTML += `
                 <div class="container" data-chore-id="${chore.id}">
-                <p>${chore.task}        ||          ${chore.duration} Minutes
-                <button type="button" class="chore-button">Done</button></p>
+                <p><strong>${chore.task}</strong> || <em>${chore.duration} Minutes</em></p>
+                <button type="button" class="chore-button">Done</button>
                 </div>
                 `
                 document.querySelectorAll('.chore-button').forEach(element => {
