@@ -14,7 +14,7 @@ class Chore {
                   <input type="text" id="task" placeholder="Please Enter Task"></p>
                   <label>Enter Chore Duration (in minutes):</label>
                   <input type="number" id="duration" placeholder="Enter a Number">
-                  <p><input type="submit"></p>
+                  <p><input type="submit" class="btn"></p>
               </form>
           `
       }
@@ -59,7 +59,7 @@ function printChores(idUser) {
                 document.getElementById('chore-container').innerHTML += `
                 <div class="container" data-chore-id="${chore.id}">
                 <p><strong>${chore.task}</strong> || <em>${chore.duration} Minutes</em></p>
-                <button type="button" class="chore-button">Done</button>
+                <button type="button" class="chore-button btn">Done</button>
                 </div>
                 `
                 document.querySelectorAll('.chore-button').forEach(element => {

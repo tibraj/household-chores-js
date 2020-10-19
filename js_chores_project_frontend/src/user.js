@@ -11,7 +11,7 @@ class User {
             <form>
                 <label>Enter Name:</label>
                 <input type="text" id="name" placeholder="Enter Your Name">
-                <input type="submit">
+                <input type="submit" class="btn">
             </form>
         `   
     }

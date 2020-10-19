@@ -1,8 +1,8 @@
-body{
+body {
     text-align: center;
 }
 
-/* .btn{
+.btn {
     color: #fff !important;
     text-transform: uppercase;
     text-decoration: none;
@@ -12,12 +12,20 @@ body{
     display: inline-block;
     border: none;
     transition: all 0.4s ease 0s;
-} */
+} 
 
-#column1, #column2 {
-    width: 33%
+.column1 {
+    width: 25%;
+    float: left;
+    background-color: #3271a8; 
 }
 
-#column3 {
+.column3 {
+    width: 25%;
+    float: right;
+    background-color: #3271a8; 
+}
+
+.column2 {
     width: auto;
 }
